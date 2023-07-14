@@ -50,7 +50,8 @@ body {
 /* =======================this is navigation section=============== */
 
 .nav-menu .page:hover,
-.nav-menu .page:focus .nav-menu .page:current,
+.nav-menu .page:focus,
+.nav-menu .page.current,
 .contacts-menu .item:hover,
 .contacts-menu .item:focus {
   color: var(--iris-color);
