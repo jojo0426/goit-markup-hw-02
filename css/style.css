@@ -26,10 +26,14 @@ body {
 .logo-link {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 0;
   line-height: 1.17;
   letter-spacing: 0.04em;
   font-weight: 800;
+}
+
+.logo-link > span {
+  font-size: 18px;
 }
 
 .logo {
@@ -62,6 +66,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .button.primary {
@@ -136,12 +141,14 @@ body {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .team .position {
   color: var(--slate);
   font-size: 16px;
   font-weight: 400;
+  text-align: center;
 }
 
 /* ===============this is the footer============= */
@@ -154,6 +161,9 @@ body {
   color: var(--cloud);
 }
 
+.footer-description {
+  color: var(--cloud);
+}
 /* ======================== portfolio========== */
 
 /* ------buttons------ */
@@ -167,7 +177,7 @@ body {
 
 .button.filter:hover,
 .button.filter:focus,
-.button.filter:current {
+.button.filter.current {
   background-color: var(--ocean);
   color: var(--cloud);
 }
